@@ -8,7 +8,7 @@ buildscript {
 }
 
 plugins {
-    id "org.jetbrains.intellij" version "0.1.10"
+    id "org.jetbrains.intellij" version "0.3.1"
 }
 
 apply plugin: 'idea'
@@ -27,12 +27,12 @@ dependencies {
     compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.4'
 }
 intellij {
-    version 'IC-2016.3'
+    version 'IC-2018.1'
     pluginName 'Code Generator'
     intellij.updateSinceUntilBuild false
-    publish {
+   /* publish {
         apply from: "gradle.properties"
-    }
+    }*/
 }
 
 group 'me.javaroad'
