@@ -33,7 +33,7 @@
     </ul>
   ]]></change-notes>
 
-  <idea-version since-build="143" until-build="173.*"/>
+  <idea-version since-build="143"/>
 
   <depends>com.intellij.modules.java</depends>
 
