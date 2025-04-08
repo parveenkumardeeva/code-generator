@@ -16,8 +16,8 @@ public class VelocityUtils {
     private static final VelocityEngine ENGINE = new VelocityEngine();
 
     static {
-        ENGINE.setProperty(RuntimeConstants.RUNTIME_LOG_LOGSYSTEM_CLASS,
-            NullLogChute.class.getName());
+       /* ENGINE.setProperty(RuntimeConstants.RUNTIME_LOG_LOGSYSTEM_CLASS,
+            NullLogChute.class.getName());*/
         ENGINE.init();
     }
 

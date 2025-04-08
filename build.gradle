@@ -1,14 +1,14 @@
 buildscript {
     repositories {
         maven{
-            url 'http://maven.aliyun.com/nexus/content/groups/public/'
+            url 'https://maven.aliyun.com/nexus/content/groups/public/'
         }
         mavenCentral()
     }
 }
 
 plugins {
-    id "org.jetbrains.intellij" version "0.3.12"
+    id "org.jetbrains.intellij" version "1.17.4"
 }
 
 apply plugin: 'idea'
@@ -16,20 +16,22 @@ apply plugin: 'org.jetbrains.intellij'
 apply plugin: 'java'
 repositories {
     maven{
-        url 'http://maven.aliyun.com/nexus/content/groups/public/'
+        url 'https://maven.aliyun.com/nexus/content/groups/public/'
     }
     //mavenCentral()
 }
 dependencies {
-    compile 'com.google.guava:guava:24.1-jre'
-    compile 'org.projectlombok:lombok:1.16.18'
-    compile 'org.apache.commons:commons-lang3:3.7'
-    compile 'commons-io:commons-io:2.6'
+    implementation 'com.google.guava:guava:24.1-jre'
+    implementation 'org.projectlombok:lombok:1.18.38'
+    annotationProcessor 'org.projectlombok:lombok:1.18.38'
+
+    implementation 'org.apache.commons:commons-lang3:3.7'
+    implementation 'commons-io:commons-io:2.6'
 }
 intellij {
-    version 'IU-2018.2.4'
-    pluginName 'Code Generator'
-    intellij.updateSinceUntilBuild false
+    version = 'IU-2018.2.4'
+    pluginName = 'Code Generator'
+    intellij.updateSinceUntilBuild = false
 }
 
 group 'me.javaroad'
