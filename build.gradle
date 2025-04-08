@@ -21,18 +21,19 @@ repositories {
     //mavenCentral()
 }
 dependencies {
-    implementation 'com.google.guava:guava:24.1-jre'
+    implementation 'com.google.guava:guava:32.0.1-android'
     implementation 'org.projectlombok:lombok:1.18.38'
     annotationProcessor 'org.projectlombok:lombok:1.18.38'
 
     implementation 'org.apache.commons:commons-lang3:3.7'
-    implementation 'commons-io:commons-io:2.6'
+    implementation 'commons-io:commons-io:2.14.0'
 }
 intellij {
-    version = 'IU-2018.2.4'
+    plugins = ['com.intellij.java']
+    version = 'IU-2024.3.5'
     pluginName = 'Code Generator'
     intellij.updateSinceUntilBuild = false
 }
 
 group 'me.javaroad'
-version '1.3.0.RELEASE'
+version '1.4.0.RELEASE'

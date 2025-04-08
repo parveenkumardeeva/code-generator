@@ -21,7 +21,7 @@ import com.intellij.openapi.ui.popup.ListPopup;
 import com.intellij.openapi.ui.popup.ListPopupStep;
 import com.intellij.openapi.vfs.VirtualFile;
 import com.intellij.tools.SimpleActionGroup;
-import com.intellij.ui.AnActionButton.AnActionEventWrapper;
+//import com.intellij.ui.AnActionButton.AnActionEventWrapper;
 import com.intellij.util.IconUtil;
 import java.util.ArrayList;
 import java.util.Map;
@@ -169,11 +169,13 @@ public class TemplateEditorConfigurable extends MasterDetailsComponent implement
                     myActionGroup.getTemplatePresentation().getText(), getTree(), true, 0, true);
                 ListPopup listPopup = popupFactory.createListPopup(step);
                 listPopup.setHandleAutoSelectionBeforeShow(true);
-                if (event instanceof AnActionEventWrapper) {
+                listPopup.showInBestPositionFor(dataContext);
+
+                /*if (event instanceof AnActionEventWrapper) {
                     ((AnActionEventWrapper) event).showPopup(listPopup);
                 } else {
                     listPopup.showInBestPositionFor(dataContext);
-                }
+                }*/
             }
         });
         result.add(new MyDeleteAction() {

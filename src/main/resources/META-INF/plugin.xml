@@ -58,7 +58,7 @@
   <!--http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html-->
   <idea-version since-build="143"/>
 
-  <depends>com.intellij.modules.java</depends>
+<!--  <depends>com.intellij.modules.java</depends>-->
 
   <extensions defaultExtensionNs="com.intellij">
     <applicationService serviceInterface="me.javaroad.plugins.settings.TemplateSettings"

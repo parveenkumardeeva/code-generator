@@ -1,14 +1,13 @@
 package me.javaroad.plugins.util;
 
-import java.io.StringWriter;
-import java.util.Map;
-import java.util.Objects;
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 import org.apache.velocity.VelocityContext;
 import org.apache.velocity.app.VelocityEngine;
-import org.apache.velocity.runtime.RuntimeConstants;
-import org.apache.velocity.runtime.log.NullLogChute;
+
+import java.io.StringWriter;
+import java.util.Map;
+import java.util.Objects;
 
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class VelocityUtils {
